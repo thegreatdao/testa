@@ -12,6 +12,8 @@
 		<activity android:name=".TestGridView">
 		</activity>
 		<activity android:name=".TestScrollView">
+		</activity>
+		<activity android:name=".AssortedWidgets">
 			<intent-filter>
 				<action android:name="android.intent.action.MAIN" />
 				<category android:name="android.intent.category.LAUNCHER" />
