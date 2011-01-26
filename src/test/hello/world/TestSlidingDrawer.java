@@ -8,22 +8,23 @@ import android.widget.GridView;
 import android.widget.Toast;
 import android.widget.AdapterView.OnItemClickListener;
 
-public class TestGridView extends Activity
+public class TestSlidingDrawer extends Activity
 {
-	public void onCreate(Bundle savedInstanceState)
+	@Override
+	protected void onCreate(Bundle savedInstanceState)
 	{
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.grid_view);
-
-		GridView gridview = (GridView) findViewById(R.id.gridview);
-		gridview.setAdapter(new ImageAdapter(this));
+		setContentView(R.layout.sliding_drawer);
+		GridView gridview = (GridView) findViewById(R.id.content);
+		ImageAdapter imageAdapter = new ImageAdapter(this);
+		gridview.setAdapter(imageAdapter);
 
 		gridview.setOnItemClickListener(new OnItemClickListener()
 		{
 			public void onItemClick(AdapterView<?> parent, View v,
 					int position, long id)
 			{
-				Toast.makeText(TestGridView.this, "" + position, Toast.LENGTH_SHORT).show();
+				Toast.makeText(TestSlidingDrawer.this, "" + position, Toast.LENGTH_SHORT).show();
 			}
 		});
 	}
