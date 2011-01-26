@@ -16,6 +16,8 @@
 		<activity android:name=".AssortedWidgets">
 		</activity>
 		<activity android:name=".TestSlidingDrawer">
+		</activity>
+		<activity android:name=".TestCustomziedList">
 			<intent-filter>
 				<action android:name="android.intent.action.MAIN" />
 				<category android:name="android.intent.category.LAUNCHER" />
