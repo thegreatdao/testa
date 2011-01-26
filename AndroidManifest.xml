@@ -9,14 +9,17 @@
 		<activity android:name=".TabAlbums"></activity>
 		<activity android:name=".TabArtists"></activity>
 		<activity android:name=".TabSongs"></activity>
-		<activity android:name=".TestTab" android:label="tab view test">
+		<activity android:name=".TestGridView">
+		</activity>
+		<activity android:name=".TestScrollView">
 			<intent-filter>
 				<action android:name="android.intent.action.MAIN" />
 				<category android:name="android.intent.category.LAUNCHER" />
 			</intent-filter>
-
+		</activity>
+		<activity android:name=".TestTab" android:label="tab view test">
 		</activity>
 	</application>
 	<uses-sdk android:minSdkVersion="7" />
 
-</manifest> 
+</manifest>
