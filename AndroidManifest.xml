@@ -4,26 +4,28 @@
 	<application android:icon="@drawable/icon" android:label="@string/app_name">
 		<activity android:name=".Test" android:label="@string/app_name">
 		</activity>
-		<activity android:name=".TestListView" android:label="list view test">
+		<activity android:name=".controls.TestListView" android:label="list view test">
 		</activity>
-		<activity android:name=".TabAlbums"></activity>
-		<activity android:name=".TabArtists"></activity>
-		<activity android:name=".TabSongs"></activity>
-		<activity android:name=".TestGridView">
+		<activity android:name=".controls.TabAlbums"></activity>
+		<activity android:name=".controls.TabArtists"></activity>
+		<activity android:name=".controls.TabSongs"></activity>
+		<activity android:name=".controls.TestGridView">
 		</activity>
-		<activity android:name=".TestScrollView">
+		<activity android:name=".controls.TestScrollView">
 		</activity>
-		<activity android:name=".AssortedWidgets">
+		<activity android:name=".controls.AssortedWidgets">
 		</activity>
-		<activity android:name=".TestSlidingDrawer">
+		<activity android:name=".controls.TestSlidingDrawer">
 		</activity>
-		<activity android:name=".TestCustomziedList">
+		<activity android:name=".controls.TestCustomizedList">
+		</activity>
+		<activity android:name=".controls.TestCustomizedListWithOtherControls">
 			<intent-filter>
 				<action android:name="android.intent.action.MAIN" />
 				<category android:name="android.intent.category.LAUNCHER" />
 			</intent-filter>
 		</activity>
-		<activity android:name=".TestTab" android:label="tab view test">
+		<activity android:name=".controls.TestTab" android:label="tab view test">
 		</activity>
 	</application>
 	<uses-sdk android:minSdkVersion="7" />

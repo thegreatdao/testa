@@ -1,5 +1,6 @@
-package test.hello.world;
+package test.hello.world.controls;
 
+import test.hello.world.R;
 import android.content.Context;
 import android.view.View;
 import android.view.ViewGroup;

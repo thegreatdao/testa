@@ -1,16 +1,16 @@
-package test.hello.world;
+package test.hello.world.controls;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.widget.TextView;
 
-public class TabArtists extends Activity
+public class TabSongs extends Activity
 {
 	public void onCreate(Bundle savedInstanceState)
 	{
 		super.onCreate(savedInstanceState);
 		TextView textview = new TextView(this);
-		textview.setText("Artists");
+		textview.setText("Songs");
 		setContentView(textview);
 	}
 }

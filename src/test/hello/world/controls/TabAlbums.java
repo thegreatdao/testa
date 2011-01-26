@@ -1,4 +1,4 @@
-package test.hello.world;
+package test.hello.world.controls;
 
 import android.app.Activity;
 import android.os.Bundle;

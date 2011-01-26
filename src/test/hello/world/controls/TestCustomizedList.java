@@ -1,10 +1,11 @@
-package test.hello.world;
+package test.hello.world.controls;
 
+import test.hello.world.R;
 import android.app.ListActivity;
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
 
-public class TestCustomziedList extends ListActivity
+public class TestCustomizedList extends ListActivity
 {
 
 	private String[] items = {"green", "red", "blue", "ivory", "pink"};

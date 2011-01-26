@@ -1,5 +1,6 @@
-package test.hello.world;
+package test.hello.world.controls;
 
+import test.hello.world.R;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;

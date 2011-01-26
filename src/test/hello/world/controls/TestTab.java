@@ -1,5 +1,6 @@
-package test.hello.world;
+package test.hello.world.controls;
 
+import test.hello.world.R;
 import android.app.TabActivity;
 import android.content.Intent;
 import android.content.res.Resources;
