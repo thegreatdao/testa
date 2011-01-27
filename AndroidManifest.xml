@@ -20,6 +20,12 @@
 		<activity android:name=".controls.TestCustomizedList">
 		</activity>
 		<activity android:name=".controls.TestCustomizedListWithOtherControls">
+		</activity>
+		<activity android:name=".i10n.TestI10N">
+		</activity>
+		<activity android:name=".animations.TestAnimation">
+		</activity>
+		<activity android:name=".color.TestColorStateList">
 			<intent-filter>
 				<action android:name="android.intent.action.MAIN" />
 				<category android:name="android.intent.category.LAUNCHER" />

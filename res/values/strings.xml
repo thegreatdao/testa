@@ -41,4 +41,6 @@ that they are worth more than the value
 of the paints used in the picture.
     
     </string>
+<string name="open">Open...</string>
+<string name="command">Ctrl-o</string>
 </resources>
