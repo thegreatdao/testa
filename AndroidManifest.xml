@@ -1,39 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
 	package="test.hello.world" android:versionCode="1" android:versionName="1.0">
+	
+	<uses-permission android:name="android.permission.INTERNET" />
 	<application android:icon="@drawable/icon" android:label="@string/app_name">
-		<activity android:name=".Test" android:label="@string/app_name">
-		</activity>
-		<activity android:name=".controls.TestListView" android:label="list view test">
-		</activity>
+		<activity android:name=".Test" android:label="@string/app_name"></activity>
+		<activity android:name=".controls.TestListView" android:label="list view test"></activity>
 		<activity android:name=".controls.TabAlbums"></activity>
 		<activity android:name=".controls.TabArtists"></activity>
 		<activity android:name=".controls.TabSongs"></activity>
-		<activity android:name=".controls.TestGridView">
+		<activity android:name=".controls.TestGridView"></activity>
+		<activity android:name=".controls.TestScrollView"></activity>
+		<activity android:name=".controls.AssortedWidgets"></activity>
+		<activity android:name=".controls.TestSlidingDrawer"></activity>
+		<activity android:name=".controls.TestCustomizedList"></activity>
+		<activity android:name=".controls.TestCustomizedListWithOtherControls"></activity>
+		<activity android:name=".i10n.TestI10N"></activity>
+		<activity android:name=".animations.TestAnimation"></activity>
+		<activity android:name=".color.TestColorStateList"></activity>
+		<activity android:name=".activities.Parent">
 		</activity>
-		<activity android:name=".controls.TestScrollView">
-		</activity>
-		<activity android:name=".controls.AssortedWidgets">
-		</activity>
-		<activity android:name=".controls.TestSlidingDrawer">
-		</activity>
-		<activity android:name=".controls.TestCustomizedList">
-		</activity>
-		<activity android:name=".controls.TestCustomizedListWithOtherControls">
-		</activity>
-		<activity android:name=".i10n.TestI10N">
-		</activity>
-		<activity android:name=".animations.TestAnimation">
-		</activity>
-		<activity android:name=".color.TestColorStateList">
+		<activity android:name=".webview.TestWebView">
 			<intent-filter>
-				<action android:name="android.intent.action.MAIN" />
-				<category android:name="android.intent.category.LAUNCHER" />
+				<action android:name="android.intent.action.MAIN"/>
+				<category android:name="android.intent.category.LAUNCHER"/>
 			</intent-filter>
 		</activity>
-		<activity android:name=".controls.TestTab" android:label="tab view test">
+		<activity android:name=".webview.WebViewActivity">
 		</activity>
+		<activity android:name=".activities.Child"></activity>
+		<activity android:name=".controls.TestTab" android:label="tab view test"></activity>
 	</application>
-	<uses-sdk android:minSdkVersion="7" />
-
+	<uses-sdk android:minSdkVersion="8"/>
 </manifest>
