@@ -21,15 +21,19 @@
 		<activity android:name=".activities.Parent">
 		</activity>
 		<activity android:name=".webview.TestWebView">
-			<intent-filter>
-				<action android:name="android.intent.action.MAIN"/>
-				<category android:name="android.intent.category.LAUNCHER"/>
-			</intent-filter>
 		</activity>
 		<activity android:name=".webview.WebViewActivity">
 		</activity>
 		<activity android:name=".activities.Child"></activity>
 		<activity android:name=".controls.TestTab" android:label="tab view test"></activity>
+		<activity android:name=".stateManagement.TestDestructionByRotation">
+		</activity>
+		<activity android:name=".stateManagement.TestDestructionByRotationAdvanced">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN"/>
+				<category android:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity>
 	</application>
 	<uses-sdk android:minSdkVersion="8"/>
 </manifest>
