@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:title="First" android:orderInCategory="1" android:icon="@drawable/gcm" />
+	<item android:orderInCategory="2" android:title="Second" />
+	<item android:orderInCategory="3" android:title="Third" />
+	<group android:menuCategory="secondary" android:orderInCategory="4" android:enabled="false">
+		<item android:orderInCategory="0" android:title="group-item-1" />
+		<item android:orderInCategory="1" android:title="group-item-2" />
+	</group>
+	<item android:id="@+id/submenu" android:orderInCategory="5" android:title="Submenu">
+		<menu>
+			<item android:title="sub-item-1" android:alphabeticShortcut="f" />
+			<item android:title="sub-item-2" android:alphabeticShortcut="s" />
+		</menu>
+	</item>
+</menu>

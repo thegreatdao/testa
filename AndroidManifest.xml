@@ -26,7 +26,14 @@
 		<activity android:name=".stateManagement.TestDestructionByRotation"></activity>
 		<activity android:name=".stateManagement.TestOnRetainNonConfigurationInstance"></activity>
 		<activity android:name=".stateManagement.TestOnConfigurationChanged" android:configChanges="orientation|keyboard"></activity>
-		<activity android:name=".menu.TestBasicMenu">
+		<activity android:name=".menu.TestBasicMenu"></activity>
+		<activity android:name=".menu.TestInflatingMenu"></activity>
+		<activity android:name=".popup.TestPopUp"></activity>
+		<activity android:name=".popup.TestAlertDialogWithAList"></activity>
+		<activity android:name=".popup.TestAlertDialogWithAListOfSingleItems"></activity>
+		<activity android:name=".popup.TestProgressBars"></activity>
+		<activity android:name=".popup.TestProgressBars"></activity>
+		<activity android:name=".popup.TestCustomizedDialog">
 			<intent-filter>
 				<action android:name="android.intent.action.MAIN"/>
 				<category android:name="android.intent.category.LAUNCHER"/>
