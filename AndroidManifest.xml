@@ -18,17 +18,14 @@
 		<activity android:name=".i10n.TestI10N"></activity>
 		<activity android:name=".animations.TestAnimation"></activity>
 		<activity android:name=".color.TestColorStateList"></activity>
-		<activity android:name=".activities.Parent">
-		</activity>
-		<activity android:name=".webview.TestWebView">
-		</activity>
-		<activity android:name=".webview.WebViewActivity">
-		</activity>
+		<activity android:name=".activities.Parent"></activity>
+		<activity android:name=".webview.TestWebView"></activity>
+		<activity android:name=".webview.WebViewActivity"></activity>
 		<activity android:name=".activities.Child"></activity>
 		<activity android:name=".controls.TestTab" android:label="tab view test"></activity>
-		<activity android:name=".stateManagement.TestDestructionByRotation">
-		</activity>
-		<activity android:name=".stateManagement.TestDestructionByRotationAdvanced">
+		<activity android:name=".stateManagement.TestDestructionByRotation"></activity>
+		<activity android:name=".stateManagement.TestOnRetainNonConfigurationInstance"></activity>
+		<activity android:name=".stateManagement.TestOnConfigurationChanged" android:configChanges="orientation">
 			<intent-filter>
 				<action android:name="android.intent.action.MAIN"/>
 				<category android:name="android.intent.category.LAUNCHER"/>
