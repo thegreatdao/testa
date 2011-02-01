@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<PreferenceCategory android:title="First Category"
+		android:key="first_category">
+		<CheckBoxPreference android:key="enable_locale"
+			android:summary="Enable or disable locale" android:title="Enable customized locale"
+			android:defaultValue="true" />
+		<ListPreference android:key="current_locale"
+			android:title="Select a locale" android:summary="Select your locale"
+			android:defaultValue="China" android:entries="@array/countries_array"
+			android:entryValues="@array/countries_array" android:dependency="enable_locale" />
+		<PreferenceScreen android:key="second_preference_screen"
+			android:title="Second Preference Screen" android:summary="This is a second preference screen">
+			<RingtonePreference android:name="Ringtone Preference"
+				android:summary="Select a ringtone" android:title="Ringtones"
+				android:key="ringtone" />
+		</PreferenceScreen>
+	</PreferenceCategory>
+
+	<PreferenceCategory android:title="Second Category" android:key="second_category">
+		<EditTextPreference android:key="welcome_message"
+			android:title="Welcome Message" android:summary="Define a Welcome message"
+			android:dialogTitle="Welcome Message" android:dialogMessage="Provide a message"
+			android:defaultValue="A welcome message" />
+	</PreferenceCategory>
+
+</PreferenceScreen>
