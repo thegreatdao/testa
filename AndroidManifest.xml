@@ -33,7 +33,9 @@
 		<activity android:name=".popup.TestAlertDialogWithAListOfSingleItems"></activity>
 		<activity android:name=".popup.TestProgressBars"></activity>
 		<activity android:name=".popup.TestProgressBars"></activity>
-		<activity android:name=".popup.TestCustomizedDialog">
+		<activity android:name=".popup.TestCustomizedDialog"></activity>
+		<activity android:name=".popup.TestProgressBarUpdating"></activity>
+		<activity android:name=".popup.TestProgressBarUpdatingWithAsynTask">
 			<intent-filter>
 				<action android:name="android.intent.action.MAIN"/>
 				<category android:name="android.intent.category.LAUNCHER"/>
