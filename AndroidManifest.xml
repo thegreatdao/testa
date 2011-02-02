@@ -36,7 +36,9 @@
 		<activity android:name=".popup.TestCustomizedDialog"></activity>
 		<activity android:name=".popup.TestProgressBarUpdating"></activity>
 		<activity android:name=".popup.TestProgressBarUpdatingWithAsynTask"></activity>
-		<activity android:name=".preferences.TestPreferences">
+		<activity android:name=".preferences.TestPreferences"></activity>
+		<activity android:name=".io.TestReadAndWriteFiles"></activity>
+		<activity android:name=".io.TestReadROF">
 			<intent-filter>
 				<action android:name="android.intent.action.MAIN"/>
 				<category android:name="android.intent.category.LAUNCHER"/>
