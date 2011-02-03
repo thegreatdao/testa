@@ -36,12 +36,9 @@ public class TestDatabaseHelperAdapter
 	 * could've made all CRUD as generic as possible, as this is for demostration purpose,
 	 * we create CRUD talirored to CONTACT tables only
 	 */
-	public long createContact(String name, String address)
+	public long createContact(ContentValues contact)
 	{
-		ContentValues contentValues = new ContentValues();
-		contentValues.put(CONTACT_NAME, name);
-		contentValues.put(CONTACT_ADDRESS, address);
-		return sQLiteDatabase.insert(CONTACT_TABLE, PRIMARY_KEY, contentValues);
+		return sQLiteDatabase.insert(CONTACT_TABLE, PRIMARY_KEY, contact);
 	}
 	
 	public boolean deleteContact(long id)
@@ -49,12 +46,9 @@ public class TestDatabaseHelperAdapter
 		return sQLiteDatabase.delete(CONTACT_TABLE, PRIMARY_KEY + "=" + id, null) > 0;
 	}
 	
-	public boolean updateContact(long id, String name, String address)
+	public boolean updateContact(long id, ContentValues contact)
 	{
-		ContentValues contentValues = new ContentValues();
-		contentValues.put(CONTACT_NAME, name);
-		contentValues.put(CONTACT_ADDRESS, address);
-		return sQLiteDatabase.update(CONTACT_TABLE, contentValues, PRIMARY_KEY + "=" + id, null) > 0;
+		return sQLiteDatabase.update(CONTACT_TABLE, contact, PRIMARY_KEY + "=" + id, null) > 0;
 	}
 	
 	public Cursor selectAllContancts()

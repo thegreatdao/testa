@@ -6,6 +6,7 @@ import test.hello.world.R;
 import test.hello.world.db.TestDatabaseHelperAdapter.Contact;
 import android.app.AlertDialog;
 import android.app.ListActivity;
+import android.content.ContentValues;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnClickListener;
 import android.database.Cursor;
@@ -152,13 +153,16 @@ public class TestDatabaseActivity extends ListActivity
 	
 	private void saveContact(String name, String address, long id)
 	{
+		ContentValues contact = new ContentValues();
+		contact.put(CONTACT_NAME, name);
+		contact.put(CONTACT_ADDRESS, address);
 		if(id == -1)
 		{
-			testDatabaseHelperAdapter.createContact(name, address);
+			testDatabaseHelperAdapter.createContact(contact);
 		}
 		else
 		{
-			testDatabaseHelperAdapter.updateContact(id, name, address);
+			testDatabaseHelperAdapter.updateContact(id, contact);
 		}
 	}
 }
