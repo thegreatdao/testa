@@ -43,4 +43,8 @@ of the paints used in the picture.
     </string>
 <string name="open">Open...</string>
 <string name="command">Ctrl-o</string>
+<string name="addOrEdit"><b>Add/Edit</b></string>
+<string name="delete"><b>Delete</b></string>
+<string name="cancel"><b>Cancel</b></string>
+<string name="edit"><b>Edit</b></string>
 </resources>

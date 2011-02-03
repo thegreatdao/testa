@@ -38,7 +38,8 @@
 		<activity android:name=".popup.TestProgressBarUpdatingWithAsynTask"></activity>
 		<activity android:name=".preferences.TestPreferences"></activity>
 		<activity android:name=".io.TestReadAndWriteFiles"></activity>
-		<activity android:name=".io.TestReadROF">
+		<activity android:name=".io.TestReadROF"></activity>
+		<activity android:name=".db.TestDatabaseActivity">
 			<intent-filter>
 				<action android:name="android.intent.action.MAIN"/>
 				<category android:name="android.intent.category.LAUNCHER"/>
