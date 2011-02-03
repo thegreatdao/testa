@@ -63,7 +63,7 @@ public class TestDatabaseHelperAdapter
 		return sQLiteDatabase.query(CONTACT_TABLE, columns, null, null, null, null, null);
 	}
 	
-	public Contact selectOneById(long id)
+	public Contact selectOneContactById(long id)
 	{
 		Contact contact = new Contact();
 		Cursor cursor = sQLiteDatabase.query(CONTACT_TABLE, new String[]{CONTACT_NAME, CONTACT_ADDRESS}, PRIMARY_KEY + "=" + id, null, null, null, null);

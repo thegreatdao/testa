@@ -76,7 +76,7 @@ public class TestDatabaseActivity extends ListActivity
 		switch (item.getItemId())
 		{
 			case FIRST:
-				Contact contact = testDatabaseHelperAdapter.selectOneById(id);
+				Contact contact = testDatabaseHelperAdapter.selectOneContactById(id);
 				showContactForm(contact.getName(), contact.getAddress(), id);
 				return Boolean.TRUE;
 			case SECOND:
