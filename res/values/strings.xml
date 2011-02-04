@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="hello">Hello World, Test!</string>
-    <string name="app_name">test</string>
+    <string name="app_name">tester</string>
     <string name="scroll_text">
     I can\'t change the fact
 that my paintings don\'t sell.

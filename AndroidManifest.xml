@@ -39,12 +39,14 @@
 		<activity android:name=".preferences.TestPreferences"></activity>
 		<activity android:name=".io.TestReadAndWriteFiles"></activity>
 		<activity android:name=".io.TestReadROF"></activity>
-		<activity android:name=".db.TestDatabaseActivity">
+		<activity android:name=".db.TestDatabaseActivity"></activity>
+		<activity android:name=".contentProvider.TestContentProviderActivity">
 			<intent-filter>
 				<action android:name="android.intent.action.MAIN"/>
 				<category android:name="android.intent.category.LAUNCHER"/>
 			</intent-filter>
 		</activity>
+		<provider android:name=".contentProvider.ContactsContentProvider" android:authorities="test.hello.world.contentprovider.contactscontentprovider"/>
 	</application>
 	<uses-sdk android:minSdkVersion="8"/>
 </manifest>

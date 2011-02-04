@@ -46,6 +46,11 @@ public class TestDatabaseHelperAdapter
 		return sQLiteDatabase.delete(CONTACT_TABLE, PRIMARY_KEY + "=" + id, null) > 0;
 	}
 	
+	public int deleteAllContacts()
+	{
+		return sQLiteDatabase.delete(CONTACT_TABLE, "1", null);
+	}
+	
 	public boolean updateContact(long id, ContentValues contact)
 	{
 		return sQLiteDatabase.update(CONTACT_TABLE, contact, PRIMARY_KEY + "=" + id, null) > 0;
@@ -60,7 +65,7 @@ public class TestDatabaseHelperAdapter
 	public Contact selectOneContactById(long id)
 	{
 		Contact contact = new Contact();
-		Cursor cursor = sQLiteDatabase.query(CONTACT_TABLE, new String[]{CONTACT_NAME, CONTACT_ADDRESS}, PRIMARY_KEY + "=" + id, null, null, null, null);
+		Cursor cursor = selectOneContact(id);
 		if(cursor.getCount() != 0)
 		{
 			cursor.moveToFirst();
@@ -69,6 +74,14 @@ public class TestDatabaseHelperAdapter
 		}
 		return contact;
 	}
+
+	public Cursor selectOneContact(long id)
+	{
+		Cursor cursor = sQLiteDatabase.query(CONTACT_TABLE, new String[]{CONTACT_NAME, CONTACT_ADDRESS}, PRIMARY_KEY + "=" + id, null, null, null, null);
+		cursor.moveToFirst();
+		return cursor;
+	}
+	
 	/*
 	 * use this class life cycle methods to manage database updates
 	 */
