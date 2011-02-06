@@ -40,7 +40,10 @@
 		<activity android:name=".io.TestReadAndWriteFiles"></activity>
 		<activity android:name=".io.TestReadROF"></activity>
 		<activity android:name=".db.TestDatabaseActivity"></activity>
-		<activity android:name=".contentProvider.TestContentProviderActivity">
+		<activity android:name=".contentProvider.TestContentProviderActivity"></activity>
+		<activity android:name=".notifications.TestNotificationExpandedMessage"></activity>
+		<activity android:name=".notifications.TestNotifications"></activity>
+		<activity android:name=".activities.TestImplicitIntent">
 			<intent-filter>
 				<action android:name="android.intent.action.MAIN"/>
 				<category android:name="android.intent.category.LAUNCHER"/>
