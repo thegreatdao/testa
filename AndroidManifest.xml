@@ -4,10 +4,16 @@
 	
 	<uses-permission android:name="android.permission.INTERNET" />
 	<application android:icon="@drawable/icon" android:label="@string/app_name">
-		<activity android:name=".Test" android:label="@string/app_name"></activity>
+		<activity android:name=".launcher.TesterLauncher">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN"/>
+				<category android:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity>
 		<activity android:name=".controls.TestListView" android:label="list view test"></activity>
 		<activity android:name=".controls.TabAlbums"></activity>
 		<activity android:name=".controls.TabArtists"></activity>
+		<activity android:name=".controls.Test"></activity>
 		<activity android:name=".controls.TabSongs"></activity>
 		<activity android:name=".controls.TestGridView"></activity>
 		<activity android:name=".controls.TestScrollView"></activity>
@@ -44,12 +50,7 @@
 		<activity android:name=".contentProvider.TestContentProviderActivity"></activity>
 		<activity android:name=".notifications.TestNotificationExpandedMessage"></activity>
 		<activity android:name=".notifications.TestNotifications"></activity>
-		<activity android:name=".services.TestLocalService">
-			<intent-filter>
-				<action android:name="android.intent.action.MAIN"/>
-				<category android:name="android.intent.category.LAUNCHER"/>
-			</intent-filter>
-		</activity>
+		<activity android:name=".services.TestLocalService"></activity>
 		<provider android:name=".contentProvider.ContactsContentProvider" android:authorities="test.hello.world.contentprovider.contactscontentprovider"/>
 		<service android:name=".services.NotificationService" />
 	</application>
