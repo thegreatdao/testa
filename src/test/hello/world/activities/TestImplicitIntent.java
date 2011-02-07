@@ -15,17 +15,18 @@ public class TestImplicitIntent extends Activity
 	{
 		super.onCreate(savedInstanceState);
 		Button button = new Button(this);
-		button.setText("click to get contact list");
+		button.setText("click to get contacts list");
 		setContentView(button);
-		button.setOnClickListener(new OnClickListener() {
-        	
-        	public void onClick(View v) {
-        		Intent contacts = new Intent();
-        		contacts.setAction(android.content.Intent.ACTION_VIEW);
-        		contacts.setData(android.provider.ContactsContract.Contacts.CONTENT_URI);
-        		startActivity(contacts);
-        	}
-        });
+		button.setOnClickListener(new OnClickListener()
+		{
+			public void onClick(View v)
+			{
+				Intent contacts = new Intent();
+				contacts.setAction(android.content.Intent.ACTION_VIEW);
+				contacts.setData(android.provider.ContactsContract.Contacts.CONTENT_URI);
+				startActivity(contacts);
+			}
+		});
 	}
-	
+
 }
