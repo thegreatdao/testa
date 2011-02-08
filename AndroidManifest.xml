@@ -51,13 +51,12 @@
 		<activity android:name=".notifications.TestNotificationExpandedMessage"></activity>
 		<activity android:name=".notifications.TestNotifications"></activity>
 		<activity android:name=".services.TestLocalService"></activity>
-		<activity android:name=".services.TestRemoteService" />
-		<activity android:name=".RemoteServiceClient" />
+		<activity android:name=".TestRemoteService" />
 		<provider android:name=".contentProvider.ContactsContentProvider" android:authorities="test.hello.world.contentprovider.contactscontentprovider"/>
 		<service android:name=".services.NotificationService" />
-		<service android:name=".RemoteService">
+		<service android:name=".CounterRemoteService">
 			<intent-filter>
-				<action android:name="test.hello.world.services.CounterRemoteService"/>
+				<action android:name="test.hello.world.CounterRemoteService"/>
 			</intent-filter>
 		</service>
 	</application>

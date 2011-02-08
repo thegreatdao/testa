@@ -1,7 +1,7 @@
 package test.hello.world.launcher;
 
 import test.hello.world.R;
-import test.hello.world.RemoteServiceClient;
+import test.hello.world.TestRemoteService;
 import test.hello.world.activities.Parent;
 import test.hello.world.activities.TestImplicitIntent;
 import test.hello.world.animations.TestAnimation;
@@ -62,7 +62,7 @@ public class TesterLauncher extends ListActivity
 					, TestBasicMenu.class, TestInflatingMenu.class, TestNotifications.class, TestAlertDialogWithAList.class, TestAlertDialogWithAListOfSingleItems.class
 					, TestCustomizedDialog.class, TestPopUp.class, TestProgressBars.class, TestProgressBarUpdating.class, TestProgressBarUpdatingWithAsynTask.class
 					, TestPreferences.class, TestLocalService.class, TestDestructionByRotation.class, TestOnConfigurationChanged.class, 
-					TestOnRetainNonConfigurationInstance.class, TestWebView.class, RemoteServiceClient.class};
+					TestOnRetainNonConfigurationInstance.class, TestWebView.class, TestRemoteService.class};
 	@Override
 	protected void onCreate(Bundle savedInstanceState)
 	{
