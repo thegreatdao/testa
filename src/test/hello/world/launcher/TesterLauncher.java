@@ -1,6 +1,7 @@
 package test.hello.world.launcher;
 
 import test.hello.world.R;
+import test.hello.world.RemoteServiceClient;
 import test.hello.world.activities.Parent;
 import test.hello.world.activities.TestImplicitIntent;
 import test.hello.world.animations.TestAnimation;
@@ -52,7 +53,8 @@ public class TesterLauncher extends ListActivity
 						, "Grid view", "List view", "Scroll view", "Sliding view", "Database", "I18N and L10N", "I/O" , "I/O readonly"
 						, "Basic Menus", "Inflating Menus", "Notifications", "Alert dialog with list", "Alert dialog with list of single items"
 						, "Customized dialog", "Simple pop up", "Progress bar", "Test progress bar with updating", " Test progress bar updating with asyntask"
-						, "Preferences" , "Local service", "Destrution by rotation", "On configuration change", "RetainNonConfigurationInstance", "Web view"};
+						, "Preferences" , "Local service", "Destrution by rotation", "On configuration change", "RetainNonConfigurationInstance", "Web view"
+						, "Remote services IPC"};
 	private static final Class<?>[] COMPONENT_NAMES = new Class<?>[]{Parent.class, TestImplicitIntent.class
 					, TestAnimation.class, TestColorStateList.class, TestContentProviderActivity.class, AssortedWidgets.class, TestTab.class, test.hello.world.controls.Test.class
 					, TestCustomizedList.class, TestCustomizedListWithOtherControls.class, TestGridView.class, TestListView.class, TestScrollView.class
@@ -60,7 +62,7 @@ public class TesterLauncher extends ListActivity
 					, TestBasicMenu.class, TestInflatingMenu.class, TestNotifications.class, TestAlertDialogWithAList.class, TestAlertDialogWithAListOfSingleItems.class
 					, TestCustomizedDialog.class, TestPopUp.class, TestProgressBars.class, TestProgressBarUpdating.class, TestProgressBarUpdatingWithAsynTask.class
 					, TestPreferences.class, TestLocalService.class, TestDestructionByRotation.class, TestOnConfigurationChanged.class, 
-					TestOnRetainNonConfigurationInstance.class, TestWebView.class};
+					TestOnRetainNonConfigurationInstance.class, TestWebView.class, RemoteServiceClient.class};
 	@Override
 	protected void onCreate(Bundle savedInstanceState)
 	{
