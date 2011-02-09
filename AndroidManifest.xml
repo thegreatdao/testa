@@ -51,14 +51,22 @@
 		<activity android:name=".notifications.TestNotificationExpandedMessage"></activity>
 		<activity android:name=".notifications.TestNotifications"></activity>
 		<activity android:name=".services.TestLocalService"></activity>
+		<activity android:name=".broadcast.TestBroadcastReceviers"></activity>
+		<activity android:name=".multimedia.TestVideo"></activity>
 		<activity android:name=".TestRemoteService" />
 		<provider android:name=".contentProvider.ContactsContentProvider" android:authorities="test.hello.world.contentprovider.contactscontentprovider"/>
 		<service android:name=".services.NotificationService" />
+		<service android:name=".broadcast.TestBroadcastReceviers" />
 		<service android:name=".CounterRemoteService">
 			<intent-filter>
 				<action android:name="test.hello.world.CounterRemoteService"/>
 			</intent-filter>
 		</service>
+		<receiver android:name=".broadcast.AlarmReceiver">
+			<intent-filter>
+				<action android:name="test.hello.world.broadcast.FIRE"/>
+			</intent-filter>
+		</receiver>
 	</application>
 	<uses-sdk android:minSdkVersion="8"/>
 </manifest>

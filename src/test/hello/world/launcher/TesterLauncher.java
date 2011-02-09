@@ -5,6 +5,7 @@ import test.hello.world.TestRemoteService;
 import test.hello.world.activities.Parent;
 import test.hello.world.activities.TestImplicitIntent;
 import test.hello.world.animations.TestAnimation;
+import test.hello.world.broadcast.TestBroadcastReceviers;
 import test.hello.world.color.TestColorStateList;
 import test.hello.world.contentProvider.TestContentProviderActivity;
 import test.hello.world.controls.AssortedWidgets;
@@ -21,6 +22,7 @@ import test.hello.world.io.TestReadAndWriteFiles;
 import test.hello.world.io.TestReadROF;
 import test.hello.world.menu.TestBasicMenu;
 import test.hello.world.menu.TestInflatingMenu;
+import test.hello.world.multimedia.TestVideo;
 import test.hello.world.notifications.TestNotifications;
 import test.hello.world.popup.TestAlertDialogWithAList;
 import test.hello.world.popup.TestAlertDialogWithAListOfSingleItems;
@@ -54,7 +56,7 @@ public class TesterLauncher extends ListActivity
 						, "Basic Menus", "Inflating Menus", "Notifications", "Alert dialog with list", "Alert dialog with list of single items"
 						, "Customized dialog", "Simple pop up", "Progress bar", "Test progress bar with updating", " Test progress bar updating with asyntask"
 						, "Preferences" , "Local service", "Destrution by rotation", "On configuration change", "RetainNonConfigurationInstance", "Web view"
-						, "Remote services IPC"};
+						, "Remote services IPC", "Broadcast with notification", "Play video"};
 	private static final Class<?>[] COMPONENT_NAMES = new Class<?>[]{Parent.class, TestImplicitIntent.class
 					, TestAnimation.class, TestColorStateList.class, TestContentProviderActivity.class, AssortedWidgets.class, TestTab.class, test.hello.world.controls.Test.class
 					, TestCustomizedList.class, TestCustomizedListWithOtherControls.class, TestGridView.class, TestListView.class, TestScrollView.class
@@ -62,7 +64,7 @@ public class TesterLauncher extends ListActivity
 					, TestBasicMenu.class, TestInflatingMenu.class, TestNotifications.class, TestAlertDialogWithAList.class, TestAlertDialogWithAListOfSingleItems.class
 					, TestCustomizedDialog.class, TestPopUp.class, TestProgressBars.class, TestProgressBarUpdating.class, TestProgressBarUpdatingWithAsynTask.class
 					, TestPreferences.class, TestLocalService.class, TestDestructionByRotation.class, TestOnConfigurationChanged.class, 
-					TestOnRetainNonConfigurationInstance.class, TestWebView.class, TestRemoteService.class};
+					TestOnRetainNonConfigurationInstance.class, TestWebView.class, TestRemoteService.class, TestBroadcastReceviers.class, TestVideo.class};
 	@Override
 	protected void onCreate(Bundle savedInstanceState)
 	{
