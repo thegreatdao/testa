@@ -3,6 +3,7 @@
 	package="test.hello.world" android:versionCode="1" android:versionName="1.0">
 	
 	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.RECEIVE_SMS" />
 	<application android:icon="@drawable/icon" android:label="@string/app_name">
 		<activity android:name=".launcher.TesterLauncher">
 			<intent-filter>
@@ -65,6 +66,11 @@
 		<receiver android:name=".broadcast.AlarmReceiver">
 			<intent-filter>
 				<action android:name="test.hello.world.broadcast.FIRE"/>
+			</intent-filter>
+		</receiver>
+		<receiver android:name=".sms.IncomingSMSIntercepter">
+			<intent-filter>
+				<action android:name="android.provider.Telephony.SMS_RECEIVED"/>
 			</intent-filter>
 		</receiver>
 	</application>
